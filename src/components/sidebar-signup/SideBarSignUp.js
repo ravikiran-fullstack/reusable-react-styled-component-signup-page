@@ -4,7 +4,7 @@ import Input from "../input/Input";
 
 import logo from "../../assets/logo.svg";
 
-const SideBar = () => {
+const SideBarSignUp = () => {
   const Container = styles.div`
     min-width: 400px;
     backdrop-filter: blur(35px);
@@ -124,4 +124,4 @@ const SideBar = () => {
   );
 };
 
-export default SideBar;
+export default SideBarSignUp;
