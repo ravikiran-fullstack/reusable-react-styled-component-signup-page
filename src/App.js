@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "styled-components";
 
-import bgImg from "./assets/bg.png";
+import bgImg from "./assets/bg_custom.png";
 import Main from "./components/main/Main";
 import SideBar from "./components/sidebar/SideBar";
 
