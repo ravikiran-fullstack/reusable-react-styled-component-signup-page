@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import styles from "styled-components";
 
-function App() {
+import bgImg from "./assets/bg.png";
+import Main from "./components/main/Main";
+import SideBar from "./components/sidebar/SideBar";
+
+const App = () => {
+  const Container = styles.div`
+    background: #EEFCFF; 
+  `;
+
+  const Wrapper = styles.div`
+    background-image: url(${bgImg});
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left:0;
+    bottom: 0;
+    right:0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+  `;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Wrapper>
+        <SideBar />
+        <Main />
+      </Wrapper>
+    </Container>
   );
-}
+};
 
 export default App;
