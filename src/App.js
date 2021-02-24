@@ -5,10 +5,10 @@ import SignIn from "./components/signin/SignIn";
 
 const App = () => {
   return (
-    <>
-      {/* <SignUp /> */}
+    <div>
       <SignIn />
-    </>
+      <SignUp /> 
+    </div>
   );
 };
 

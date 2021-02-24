@@ -15,12 +15,7 @@ const SignIn = () => {
     background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    left:0;
-    bottom: 0;
-    right:0;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     display: flex;
   `;
